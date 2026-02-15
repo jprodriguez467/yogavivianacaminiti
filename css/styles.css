@@ -1,0 +1,1170 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.curso-body{
+  background-color: #db2323;
+}
+
+.portada{
+ 
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+}
+/*p-inicio*/
+.p-inicio{
+   background-image: url(../assets/images/portada.png);
+  background-size: cover;
+}
+.p-cursos{
+  background-image: url(../assets/images/portada-cursos.png);
+  background-size: cover;
+}
+.p-retiros{
+  height: 500px;
+    background-image: url(../assets/images/retiros.jpg);
+  background-size: cover;
+}
+.p-yoga{
+
+    background-image: url(../assets/images/portada-clases.png);
+  background-size: cover;
+  background-color: #ccc;
+  z-index: 999;
+}
+.p-kundalini{
+    background-image: url(../assets/images/kundalini.png);
+  background-size: cover; 
+}
+.p-yoga-en-silla{
+    
+  background-size: cover;  
+}
+
+
+
+/*titulo principal de la web */
+
+    
+
+.nombre{
+  color: #f5f1f1;
+   font-family: 'Ephesis', cursive;
+   font-size: 120px;
+}
+
+.presentacion{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(24px, 4vw + 1rem, 48px);
+
+ 
+}
+.tex{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f9f3f3;
+  font-size: 60px;
+}
+.col-2{
+  background: url(/assets/images/portada-yoga-en-silla.png);
+}
+.p-1{
+  width: 40%;
+  font-size: 25PX;
+  font-style: justify;
+  text-align: center;
+}
+
+ 
+/*pagina de yoga en silla grid-filas y columnas*/
+.container{
+  margin: 50px;
+ 
+}
+
+
+
+/*pagina index*/
+.card{
+    background-color:rgb(127, 209, 227);
+    width:250px;
+}
+     /*css de la pagina de cursos*/
+ 
+nav{
+    margin-right: 25px;
+}
+.nav-link{
+  font-size: 25px;
+  font-family: 'Ephesis', cursive;
+  letter-spacing: 3.5px;
+}
+.logo{
+  width: 20%;
+  height: auto;
+}
+/*pagina de inicio*/
+
+.preguntas-frecuentes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; /* se adapta a pantallas pequeñas */
+  align-content: wrap;
+  gap: 30px;
+  padding: 80px 20px;
+  margin-top: 80px; /* evita que se encime con el main */
+  background-color: #f9f9f9; /* opcional, para resaltar la sección */
+  border-radius: 12px;
+ 
+}
+
+.preguntas-frecuentes .titulo {
+  /* letra BIEN grande */
+  font-weight: 400;
+  margin: 0 0 20px;
+  text-align: center;
+   font-size: clamp(1,5rem, 8vw, 4rem);
+}
+
+
+.preguntas-frecuentes p {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0;
+}
+
+.preguntas-frecuentes img {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+/*fin pregintas frecuentes*/
+.flexbox-a {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px;
+  background-color: rgb(228, 73, 73);
+  border: 1px solid #e11d1d;
+  color: black;
+}
+
+.subtitulos{
+  margin: 0;
+  font-size: 1.3em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f9f9f9;
+}
+
+.box-a-2{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  gap: 20px;
+  background-color: #ea6c6c;
+ border-radius: 15px;
+}
+
+.yoga{
+  color: #ede2e2;
+  margin-left: 30px;
+  margin-top: 30px;
+ font-family: cursive;
+  font-size: 1.3em;
+}
+.parrafo-yoga{
+  font-size: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f9f9f9;  
+}
+
+.video-container iframe {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 0 0 10px rgba(242, 12, 12, 0.2);
+}
+/*video pagina yoga*/
+.video-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      background-color: #f41313;
+    }
+
+    video {
+      width: 100%;
+      max-width: 600px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+
+/* Contacto + mapa  pagina index*/
+
+.box-a-3 {
+      padding: 20px;
+      background-color: #f01111;
+    }
+
+    .contacto-contenedor {
+      display: flex;
+      gap: 20px;
+      justify-content: center;
+      align-items: stretch;
+      flex-wrap: wrap;
+    }
+
+    .info, .mapa {
+      flex: 1 1 300px;
+      max-width: 100%;
+      height: 400px; /* Altura fija */
+      box-sizing: border-box;
+      padding: 20px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .info label {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .info input {
+      padding: 8px;
+      margin-top: 4px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .info button {
+      margin-top: 20px;
+      padding: 10px;
+      background-color: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .info button:hover {
+      background-color: #0056b3;
+    }
+
+    .mapa iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 8px;
+    }
+    /*retiros*/
+    .vallehermoso{
+    margin-left: 100PX;
+      margin-top: 100px;
+      margin-bottom: 40px;
+    }
+      
+/*video de index*/
+/*voy a agregar un margen para que los elementos no se encimen y se desconfigure*/
+.video-wrapper {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+        z-index: 1;
+    }
+      
+.video-wrapper{
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  aspect-ratio: 16 / 9;
+  margin: 0 auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+  
+.prueba-yoga{
+  
+ align-content: center;
+  width: 700px;
+
+ 
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  border: 1px solid #3fb83d;
+}
+
+.info input{
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #999;
+}
+
+.info button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #3244e1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mapa {
+  width: 300px;
+  height: 300px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.mapa iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive (opcional) */
+/*pagina de cursos yoga*/
+/*contenedor de la clase contenedor-clases-1*/
+.contenedor-clases-1{
+    align-items: center;
+    background-color: blue;
+    flex-direction: column;
+    flex-direction: row;
+}
+/*imagenes de la paginas clases*/
+.square{ 
+    background-color: rgb(248, 247, 246);
+    display: grid;
+    grid-template-columns: 50px 250px 50px 250px 50px 250px 50px;
+    grid-template-rows: 50px 250px 50px 250px 50px 250px 50px;
+    align-content: center;
+    justify-content: center;
+    
+}
+.fra{
+  font-size: 1.3em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caja0{
+    grid-column: 2/7;
+    grid-row: 2/3;
+    font-size: 25px;
+    color: rgb(20, 11, 1);       
+            
+}
+.caja1{
+     
+    grid-column: 2/3;
+    grid-row: 4/5;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/Reducción-estrés-ansiedad.png"); 
+  
+}
+.caja2{
+   display: grid;
+    grid-column: 4/5;
+    grid-row: 4/5;
+     background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/flexibilidad-fuerza.png");
+    
+}
+.caja3{
+    display: grid;
+    grid-column: 6/7;
+    grid-row: 4/5;
+       background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)),    url("../assets/images/equilibrioy-coordinacion.png");
+
+}
+.caja4{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/Claridad-mental.png");
+  
+}
+.caja5{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 6/7;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/sistema-inmunológico.png");
+ 
+}
+.caja6{
+    display: grid;
+    grid-column: 6/7;
+    grid-row: 6/7;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.241),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/paz-interior.png"); 
+
+}
+
+    
+   
+    /*justify-content: space-between;
+    align-items: center;*/
+
+.icono{
+    font-size: 50px;
+    padding-right: 10px;
+}
+
+
+.container-fluid{
+  width: 100%;
+ height: 15vh;
+ background-color: #1616dd4d;
+    
+}
+.carouselkun{
+    display: flex;
+    background-color: rgb(165, 175, 175);
+    justify-content: center;
+    align-items: center;
+}
+.portada2{
+      background-image: linear-gradient(0deg,
+      rgba(0, 0, 1, 0.6),
+      rgba(0, 0, 1, 0.6)
+    ),    url("../assets/images/portada-clases.png");
+    
+    width: 100%;
+    background-size: cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center; /*centra los elementos en el eje principal*/
+    flex-direction: column;
+    align-items: center; /*eje certical*/
+ 
+}
+/* paginas terapias holìsticas*/
+
+.p-terapias{ 
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ width: 100%;
+ height: 80vh;
+ margin-bottom: 200px;
+    
+}
+.video-terapias{
+    position: relative;
+    background-color: #688d3d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 600px;
+    margin: 0;
+    padding: 0;
+        object-fit: contain;
+    overflow: clip;
+}
+.texto-terapias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    z-index: 2;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+ .bannerx{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 150px;
+    margin-bottom: 500px;
+    overflow: hidden;
+ }   
+ .videox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    object-fit: cover;
+    overflow: hidden;
+ }
+ 
+ .titulo-th{
+    margin-top: 500px;
+    position: absolute;
+    color: beige;
+    z-index: 1;
+
+ }
+
+.titulo-retiros{
+ color: rgb(241, 235, 234);
+}
+.portada01{
+    width: 100%;
+    height: 500px;
+    top: 5px;
+}
+h3{
+    color: rgb(1, 8, 14);
+    width: 50%;
+}
+.nombre-titulo{
+    color: black;
+     
+    font-family: "Ephesis", cursive;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 244, 240);
+}
+nav a:hover{
+    color: rgb(67, 240, 19);
+    }
+
+.logo{
+   display: flex; 
+   align-items: center;
+}
+.logo img{
+    display: flex;
+    height: 55px;
+    margin: 10px;
+}
+
+nav a{
+   
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.conter-999{
+  background-color: #e9b37a;
+  margin: 80px auto;
+  width: 900px;
+  height: px;
+  display: grid;
+ grid-template-columns: 150px 150px 150px 150px 150px;
+ grid-template-rows: 100px 100px 100px 100px 100px 100px;
+  border-radius: 15px;
+}
+.cuadrado{
+
+  background-color: rgb(135, 105, 83);
+margin-top: 20px;
+ grid-column: 3/6;
+ grid-row: 3/6;
+z-index: 5;
+border-radius: 15px;
+}
+
+.frase{
+font-size: top 20px;
+  background-color: #f56967;
+ grid-column: 2/5;
+ grid-row: 2/4;
+ border-radius: 15px;
+
+}
+.fra{
+  margin-top: 20px;
+margin-left: 50px;
+color: #f0f0f0;
+}
+.cuad{
+  margin-top: 20px;
+  margin-left: 20px;
+  color: #f0f0f0;
+}
+
+/*pagina de retiros*/
+.box-namaste{
+  background-color: #e29f60;
+  margin: 80px auto;
+  width: 800px;
+  height: 800px;
+ 
+  outline: 4px solid;
+  display: grid;
+ grid-template-columns: 200px 200px 200px 200px;
+ grid-template-rows: 200px 200px 200px 200px;
+  
+}
+.elem{
+  background: #3244e1;
+  color: #999;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.elem-2{
+  background: url(../assets/images/namaste.png);
+  grid-column: 1/3;
+  grid-row: 1/3;
+  
+  
+}
+.elem-1{
+  background: url(../assets/images/palabra-namaste.png);
+ 
+  grid-column: 2/4;
+  grid-row: 1/2;
+  z-index: 3;
+ 
+}
+.elem-3{
+  background: url(../assets/images/namaste-significado.png);
+ grid-column: 2/4;
+  grid-row: 2/4;
+  z-index: 99;
+
+}
+.elem-4{
+ 
+  background: url(../assets/images/buda-namaste.png);
+   grid-column: 3/5;
+  grid-row: 2/5;
+
+}
+
+.navbar {
+    background: linear-gradient(135deg, rgba(255,255,255,0.9) 0%, rgba(255,255,255,0.7) 100%) !important;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    padding: 1rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #4a5568 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    transform: translateY(-2px);
+    color: #805ad5 !important;
+}
+
+.logo {
+    width: 50px !important;
+    height: 50px !important;
+    border-radius: 50%;
+    margin-right: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logo:hover {
+    transform: rotate(360deg) scale(1.1);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    color: #4a5568 !important;
+    margin: 0 8px;
+    padding: 8px 16px !important;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: left 0.3s ease;
+    z-index: -1;
+    border-radius: 25px;
+}
+
+.navbar-nav .nav-link:hover::before,
+.navbar-nav .nav-link.active::before {
+    left: 0;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.dropdown-menu {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    padding: 10px;
+    margin-top: 8px;
+}
+
+.dropdown-item {
+    border-radius: 10px;
+    padding: 8px 16px;
+    transition: all 0.3s ease;
+    color: #4a5568;
+}
+
+.dropdown-item:hover {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    transform: translateX(5px);
+}
+
+.navbar-toggler {
+    border: none;
+    padding: 4px 8px;
+}
+
+.navbar-toggler:focus {
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2874, 75, 98, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 15px;
+        padding: 20px;
+        margin-top: 15px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 5px 0;
+        text-align: center;
+    }
+}
+
+@media (max-width:768px)
+{
+.container-fluid{
+  width: 100%;
+ height: 15vh;
+ background-color: #1616dd4d;
+  z-index: 5;  
+  background-color: #db2323;
+  z-index: 1528;
+}
+.navbar-collapse .collapse{
+  display: flex;
+  background-color: #23db3f;
+}
+ .contenedor{
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .navbar-toggler{
+    z-index: 5;
+    margin-left: 50vh;
+   margin-top: -15vh;
+  }
+  .portada{
+    display: flex;
+    margin-top: 5px;
+  }
+.p-retiros{
+  margin-top: 0px;
+  height: 200px;
+}
+.portada .p-cursos{
+  margin-top: 0px;
+  height: 200px;
+}
+.portada.p-inicio{
+  margin-top: 0px;
+  height: 200px;
+}
+  .caja {
+    flex: 1 1 30%;
+  }
+  .portada.p-yoga{
+  margin-top: 0px;
+  height: 200px;
+}
+.portada .p-yoga-en-silla{
+    margin-top: 0px;
+  height: 200px;
+}
+.presentacion{
+  width: 100%;
+  font-size: clamp(24px, 4vw + 1rem, 48px);*/
+
+
+.nombre{
+  color: #f5f1f1;
+   font-family: 'Ephesis', cursive;
+   font-size: 60px;
+}
+.parrafo-yoga{
+  margin: 0;
+  width: 100;
+    font-size: 10px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #f8f8f8; 
+}
+
+  .box-namaste{
+   grid-template-columns: 10px 200px 200px 10px 0px;
+   grid-template-rows: repeat(8,200px);
+  width: 420px;
+  height: 100%;
+  
+  }
+  .conter-999{
+    background-color: black;
+   width: 100%;
+   height: 100%;
+    display: grid;
+    grid-column: 150px 150px 150pxpx 150px 20px;
+    grid-template-rows: 100px 100px 100px 100px 100px 20px;
+  }
+  .frase{
+    margin-left: 5px;
+    margin-right: 40px;
+    font-size: top 20px;
+    background-color: #e8b97b;
+    grid-column: 1/4;
+    grid-row: 1/2;
+
+  }
+  .cuadrado{
+    margin-left: 5px;
+    margin-right: 40px;
+        font-size: top 20px;
+    background-color: #916508;
+    grid-column: 1/4;
+    grid-row: 2/7;
+    margin-top: 0;
+  }
+  .cuad{
+  margin-right: 30px;
+  margin-top: 40px;
+}
+.fra{
+   margin-right: 30px;
+  margin-top: 40px;
+}
+  .elem-1{
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .elem-2{
+     grid-column: 2/4;
+    grid-row: 2/4;
+    
+  }
+    .elem-3{
+     grid-column: 2/4;
+    grid-row: 4/6;}
+     .elem-4{
+     grid-column: 2/5;
+    grid-row: 6/9;}
+/*pagina index*/
+.portada{
+  margin-top: 80px;
+  width: 100%;
+  height: 100%;
+
+}
+
+.p-1{
+  width: 100%;
+  font-weight: 800;
+  font-size: larger;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.body{
+  background-color: #e86f19;
+  width: 100%;
+  height: 100%;
+}
+.square{
+ 
+     background-color: rgb(248, 247, 246);
+     display: grid;
+     grid-template-columns: 50px 250px 50px 0px 0px 0px 0px;
+     grid-template-rows: 250px 250px 250px 250px 250px 250px 250px;
+    align-content: center;
+    justify-content: center;
+    gap: 5px;
+    
+}
+.fra{
+  font-size: 1.3em;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.caja0{
+align-content: center;
+    grid-column: 2/4;
+    grid-row: 1/2;
+    font-size: 25px;
+    color: rgb(20, 11, 1);
+          
+            
+}
+.caja0 .pa{
+  display: none;
+}
+.caja1{
+     
+    grid-column: 2/3;
+    grid-row: 2/3;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/Reducción-estrés-ansiedad.png");
+    
+  
+}
+.caja2{
+   display: grid;
+    grid-column: 2/3;
+    grid-row: 3/4;
+     background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/flexibilidad-fuerza.png");
+    
+}
+.caja3{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/5;
+       background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)),    url("../assets/images/equilibrioy-coordinacion.png");
+
+}
+.caja4{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 5/6;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/Claridad-mental.png");
+  
+}
+.caja5{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 6/7;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.6),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/sistema-inmunológico.png");
+ 
+}
+.caja6{
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 7/8;
+    background-image: linear-gradient(0deg,
+      rgba(0, 1, 0, 0.241),
+      rgba(0, 1, 0, 0.6)
+    ),    url("../assets/images/paz-interior.png");
+    
+
+
+}
+   .navbar {
+        padding: 0.5rem 0;
+        backdrop-filter: blur(15px);
+    }
+    
+    .container-fluid {
+        padding: 0 15px;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+        flex-shrink: 0;
+    }
+    
+    .logo {
+        width: 42px !important;
+        height: 42px !important;
+        margin-right: 10px;
+        font-size: 1rem;
+    }
+    
+    .navbar-toggler {
+        padding: 4px 6px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+    }
+    
+    .navbar-toggler:hover {
+        background: rgba(102, 126, 234, 0.2);
+    }
+    
+    .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .navbar-collapse {
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(15px);
+        border-radius: 15px;
+        padding: 20px;
+        margin-top: 15px;
+        box-shadow: 0 8px 32px rgba(31, 38, 135, 0.4);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        animation: slideDown 0.3s ease;
+    }
+    
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+    
+    .navbar-nav {
+        text-align: center;
+    }
+    
+    .navbar-nav .nav-link {
+        margin: 6px auto;
+        padding: 12px 24px !important;
+        display: block;
+        max-width: 200px;
+        border-radius: 25px;
+        font-size: 1rem;
+        width: fit-content;
+    }
+    
+    .navbar-nav .nav-link:hover {
+        transform: translateY(-2px) scale(1.02);
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+    
+    .dropdown-menu {
+        background: rgba(255, 255, 255, 0.9);
+        backdrop-filter: blur(10px);
+        border-radius: 12px;
+        margin-top: 8px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(31, 38, 135, 0.3);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        min-width: 180px;
+    }
+    
+    .dropdown-item {
+        padding: 10px 16px;
+        font-size: 0.95rem;
+        border-radius: 8px;
+        margin: 2px 4px;
+    }
+    
+    .dropdown-item:hover {
+        transform: translateX(3px) scale(1.02);
+        box-shadow: 0 2px 10px rgba(102, 126, 234, 0.2);
+    }
+}
+
+
+}
+
+
+
+
+
+
+

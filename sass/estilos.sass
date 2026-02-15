@@ -1,0 +1,99 @@
+@use 'variables' as *
+@use 'body'
+@use 'header'
+@use 'pagina1'
+@use 'cursos'
+@use 'retiros'
+@use 'yoga'
+@use 'yogaensilla'
+@use 'yogakundalini'
+@use 'square'
+@use 'flexboxa'
+@use 'portada'
+@use 'footer'
+@use 'textos'
+
+h2, h3
+    color: $color-primary
+    margin: $padding-small 0
+    color: #170606
+    font-size: 50px
+    margin-left: 250px
+    @media (max-width: 768px)
+        font-size: 25px
+        margin-left: 20px
+.titulo-respiracion
+    font-size: 50px
+    margin: 10px
+    @media (max-width: 768px)
+        font-size: 30px
+        margin-left: 5px
+.intro-retiro
+    margin-left: 100px
+    color: #fff
+    font-size: 30px
+    @media (max-width: 768px)
+        margin-left: 15px
+        font-size: 20px
+
+.intro-a
+    color: #fff
+    font-size: 25px
+    margin-left: 100px
+    @media (max-width: 768px)
+        margin-left: 15px
+        font-size: 15px
+.respiracion
+    color: #fff
+    font-size: 25px
+    @media (max-width: 768px)
+        margin-left: 15px
+        font-size: 15px
+.col
+    color: #f6efef
+    font-size: 25px
+    margin-left: 10px
+p
+    margin-left: 25px
+    line-height: 50px
+    font-size: 25px
+    @media (max-width: 768px)
+
+        margin-left: 2px
+        margin-right: 2px
+        margin-right: 20px
+.contenido
+    font-size: 25px
+    @media (max-width: 768px)
+        font-size: 20px
+
+//seccion de contacto
+       <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    .info
+        max-width: 600px
+        margin: 50px auto
+        padding: 30px
+        border: 2px solid #ddd
+        border-radius: 10px
+        background-color: #f8f9fa
+
+    & h1
+        text-align: center
+        margin-bottom: 30px
+        color: #333
+        font-size: 24px
+
+        .form-control
+            margin-bottom: 15px
+
+        textarea.form-control
+            resize: vertical
+
+        .btn-block
+            width: 100%
+
+    </style>

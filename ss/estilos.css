@@ -1,0 +1,60 @@
+.container-fluid {
+  height: 300px;
+  background-color: #f00c67;
+  font-size: 30px;
+  font-family: "Quintessential", serif;
+  color: #e0e1e9;
+  margin-left: 6000px;
+  gap: 200px;
+}
+.container-fluid .logo {
+  width: 90px;
+  height: auto;
+}
+
+.portada {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.p-inicio {
+  background-image: url(../assets/images/portada.png);
+  background-size: cover;
+}
+.p-inicio .p-cursos {
+  background-image: url(../assets/images/terapias01.png);
+  background-size: cover;
+}
+
+.p-retiros {
+  height: 500px;
+  background-image: url(../assets/images/retiros.jpg);
+  background-size: cover;
+}
+
+.p-yoga {
+  background-image: url(../assets/images/portada-clases.png);
+  background-size: cover;
+  background-color: #ccc;
+  z-index: 999;
+}
+
+.p-kundalini {
+  background-image: url(../assets/images/kundalini.png);
+  background-size: cover;
+}
+
+.p-yoga-en-silla {
+  background-size: cover;
+}
+
+.nombre {
+  color: #db1212;
+  font-family: "Ephesis", cursive;
+  font-size: 120px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

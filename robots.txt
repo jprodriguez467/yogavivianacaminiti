@@ -1,0 +1,29 @@
+# robots.txt para Sat Nam Yoga Estudio
+
+# Permitir acceso a todos los bots de búsqueda
+User-agent: *
+Allow: /
+
+# Bloquear carpetas que no queremos indexar
+Disallow: /css/
+Disallow: /assets/
+Disallow: /*.css$
+Disallow: /*.js$
+
+# Permitir específicamente el acceso a imágenes importantes
+Allow: /assets/images/logosatnam.png
+Allow: /assets/images/*.jpg
+Allow: /assets/images/*.png
+
+# Ubicación del sitemap
+Sitemap: https://yogavivianacaminiti.vercel.app/sitemap.xml
+
+# Configuración específica para Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Configuración para Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

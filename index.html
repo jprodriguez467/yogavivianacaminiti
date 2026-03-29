@@ -197,8 +197,14 @@
 
       <main>
          <section class="portada p-inicio">
-             <h1 class="nombre">Sat Nam Yoga Estudio</h1>
-         </section>    
+             <div class="hero-overlay">
+                 <h1 class="nombre">Sat Nam Yoga Estudio</h1>
+                 <p class="hero-subtitle">Encontrá tu equilibrio &bull; Cuerpo, Mente y Espíritu</p>
+                 <a href="https://api.whatsapp.com/send?phone=5493420000000&text=Hola%2C%20quiero%20información%20sobre%20las%20clases%20de%20yoga" class="btn-cta" target="_blank" rel="noopener">
+                     <i class="fab fa-whatsapp"></i> Comenzá tu práctica hoy
+                 </a>
+             </div>
+         </section>
     </main>
      <section class="presentacion">
         <div class="p-1">
@@ -224,18 +230,38 @@
             <h2 class="vivi">Los beneficios del yoga incluyen:</h2>
             
 </div>
-   <ul class="respiracion">
-        
-                  <li>Reducción del estrés y la ansiedad</li>
-                  <li>Mejora de la flexibilidad y la fuerza</li>
-                  <li>Mayor equilibrio y coordinación</li>
-                  <li>Claridad mental y enfoque</li>
-                  <li>Mejora del sueño</li>
-                  <li>Fortalecimiento del sistema inmunológico</li>
-                  <li>Mayor autoconocimiento y paz interior</li>
-                  
-
-              </ul>
+   <div class="beneficios-grid">
+       <div class="beneficio-card">
+           <div class="beneficio-icon"><i class="fas fa-brain"></i></div>
+           <h3>Reducción del estrés</h3>
+           <p>Aliviá la tensión y encontrá paz interior con técnicas de respiración y meditación.</p>
+       </div>
+       <div class="beneficio-card">
+           <div class="beneficio-icon"><i class="fas fa-dumbbell"></i></div>
+           <h3>Flexibilidad y fuerza</h3>
+           <p>Mejorá tu postura, flexibilidad y fortalecé tu cuerpo de manera armoniosa.</p>
+       </div>
+       <div class="beneficio-card">
+           <div class="beneficio-icon"><i class="fas fa-balance-scale"></i></div>
+           <h3>Equilibrio y coordinación</h3>
+           <p>Desarrollá mayor conciencia corporal y coordinación en tu vida diaria.</p>
+       </div>
+       <div class="beneficio-card">
+           <div class="beneficio-icon"><i class="fas fa-lightbulb"></i></div>
+           <h3>Claridad mental</h3>
+           <p>Mejorá tu concentración y claridad para tomar mejores decisiones.</p>
+       </div>
+       <div class="beneficio-card">
+           <div class="beneficio-icon"><i class="fas fa-moon"></i></div>
+           <h3>Mejor sueño</h3>
+           <p>Regularizá tus ciclos de descanso y despertá con más energía cada día.</p>
+       </div>
+       <div class="beneficio-card">
+           <div class="beneficio-icon"><i class="fas fa-heart"></i></div>
+           <h3>Paz interior</h3>
+           <p>Conectá con tu ser interior y cultivá una actitud serena ante la vida.</p>
+       </div>
+   </div>
     <div class="container" >
         <div class="row">
             
@@ -327,6 +353,38 @@
       </div>
 </div>
 
+<section class="testimonios">
+    <div class="container">
+        <h2 class="testimonios-titulo">Lo que dicen nuestros alumnos</h2>
+        <div class="testimonios-grid">
+            <div class="testimonio-card">
+                <div class="testimonio-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonio-texto">"Desde que empecé con Viviana mi vida cambió por completo. La serenidad que transmite en cada clase es única y transformadora."</p>
+                <div class="testimonio-autor">
+                    <strong>María G.</strong>
+                    <span>2 años practicando</span>
+                </div>
+            </div>
+            <div class="testimonio-card">
+                <div class="testimonio-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonio-texto">"El yoga en silla me ayudó a manejar los dolores de espalda. Ahora me siento más libre, liviana y con mucha más energía."</p>
+                <div class="testimonio-autor">
+                    <strong>Nora L.</strong>
+                    <span>Yoga en silla</span>
+                </div>
+            </div>
+            <div class="testimonio-card">
+                <div class="testimonio-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                <p class="testimonio-texto">"El Kundalini me transformó por completo. Viviana tiene una energía especial que te conecta con lo mejor de vos mismo."</p>
+                <div class="testimonio-autor">
+                    <strong>Roberto F.</strong>
+                    <span>Kundalini Yoga</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <footer class="pie">
   <div class="container text-center">
     <h5 class="cont">Contáctanos</h5>
@@ -353,13 +411,22 @@
      <!--NOMBRE-->
      <div class="copyright-container">
     <p class="copyright">
-       @copyright 2025 <span class="jpr-cursiva">Juan Pablo, Rodríguez.</span>
+        &copy; 2025 Rodriguez Juan Pablo
     </p>
 </div>
     </div>
   </div>
 </footer>
  
+     <!-- Botón flotante WhatsApp -->
+     <a href="https://api.whatsapp.com/send?phone=5493420000000&text=Hola%21%20Quiero%20información%20sobre%20las%20clases%20de%20yoga"
+        class="whatsapp-float"
+        target="_blank"
+        rel="noopener"
+        aria-label="Contactar por WhatsApp +54 342 000-0000">
+         <i class="fab fa-whatsapp"></i>
+     </a>
+
      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script> 
      <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

@@ -311,12 +311,16 @@ li {
 .conter-999 {
   margin-top: 50px;
   width: 100%;
-  height: 250px;
+  height: auto;
+  padding: 20px;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) {
   .conter-999 {
     margin-top: 25px;
-    height: 500px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
   }
 }
 
@@ -337,14 +341,15 @@ li {
 
 .cuad {
   margin-left: 50px;
+  margin-right: 50px;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #f9f9f9;
 }
 
 .card-courses {
-  margin-left: auto;
-  margin-right: auto;
+  position: static;
+  margin: 0 auto;
   max-width: 1200px;
   width: 100%;
   display: flex;
@@ -353,14 +358,15 @@ li {
   padding: 40px 20px;
   justify-content: center;
   align-items: stretch;
+  box-sizing: border-box;
 }
 @media (max-width: 768px) {
   .card-courses {
-    margin-left: 0;
-    margin-right: 0;
     flex-direction: column;
     align-items: center;
     padding: 20px 16px;
+    margin: 0 auto;
+    width: 100%;
   }
 }
 
@@ -462,10 +468,17 @@ li {
     padding: 20px;
   }
   .card-courses .card {
+    width: 90%;
     max-width: 100%;
+    margin: 0 auto;
   }
   .card-courses .card-img-top {
     height: 200px;
+  }
+  .cuad {
+    font-size: 16px;
+    margin-left: 15px;
+    margin-right: 15px;
   }
 }
 

@@ -343,7 +343,10 @@ li {
 }
 
 .card-courses {
-  margin-left: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -353,7 +356,11 @@ li {
 }
 @media (max-width: 768px) {
   .card-courses {
-    margin-left: 20px;
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 16px;
   }
 }
 
@@ -449,26 +456,32 @@ li {
     transform: translateY(0);
   }
 }
-.card-courses {
-  flex-direction: column;
-  padding: 20px;
-}
-.card-courses .card {
-  max-width: 100%;
-}
-.card-courses .card-img-top {
-  height: 200px;
-}
-
-.card-courses .card {
-  max-width: 300px;
-}
-.card-courses .card-img-top {
-  height: 200px;
+@media (max-width: 768px) {
+  .card-courses {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .card-courses .card {
+    max-width: 100%;
+  }
+  .card-courses .card-img-top {
+    height: 200px;
+  }
 }
 
-.card-courses .card {
-  max-width: 350px;
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-courses .card {
+    max-width: 300px;
+  }
+  .card-courses .card-img-top {
+    height: 200px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-courses .card {
+    max-width: 350px;
+  }
 }
 .card-courses:hover .card-body::after {
   content: "✨";

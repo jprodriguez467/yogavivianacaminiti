@@ -167,7 +167,7 @@ body {
   width: 100%;
   justify-content: center;
   align-items: center;
-  font-size: clamp(24px, 4vw + 1rem, 48px);
+  font-size: clamp(16px, 1vw + 0.6rem, 19px);
 }
 @media (max-width: 768px) {
   .fondo-1 {
@@ -183,7 +183,7 @@ body {
 }
 
 .vivi {
-  font-size: 50px;
+  font-size: clamp(26px, 3vw, 34px);
   color: #e7ede2;
   margin-left: 30px;
   margin-top: 30px;
@@ -254,28 +254,7 @@ body {
 
 .p-1 {
   width: 100%;
-  font-size: 25PX;
-  font-style: justify;
-  text-align: center;
-}
-@media (max-width: 768px) {
-  .p-1 {
-    width: 100%;
-  }
-}
-
-.tex {
-  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
-  color: #f9f3f3;
-  font-size: 60px;
-}
-
-.col-2 {
-  background: url(/assets/images/portada-yoga-en-silla.png);
-}
-
-.p-1 {
-  font-size: 25PX;
+  font-size: 18px;
   font-style: justify;
   text-align: center;
 }

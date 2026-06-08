@@ -3,7 +3,7 @@ body {
   width: 100%;
   margin: 0;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  font-family: Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   min-height: 200vh;
 }
 @media (max-width: 768px) {
@@ -187,7 +187,7 @@ body {
   color: #e7ede2;
   margin-left: 30px;
   margin-top: 30px;
-  font-family: cursive;
+  font-family: "Playfair Display", Georgia, serif;
 }
 @media (max-width: 768px) {
   .vivi {
@@ -195,7 +195,7 @@ body {
     margin-left: 10px;
     margin-top: 30px;
     margin-right: 40px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   }
 }
 
@@ -207,7 +207,7 @@ body {
   margin-top: 20px;
   margin-left: 50px;
   font-size: 50px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   color: #f9f9f9;
 }
 @media (max-width: 768px) {
@@ -243,7 +243,7 @@ body {
 }
 
 .tex {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   color: #f9f3f3;
   font-size: 60px;
 }
@@ -265,7 +265,7 @@ body {
 }
 
 .tex {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   color: #f9f3f3;
   font-size: 60px;
 }
@@ -322,14 +322,14 @@ li {
 
 .fra {
   margin-top: 50px;
-  font-family: cursive;
+  font-family: "Playfair Display", Georgia, serif;
   font-size: 60px;
   color: #fff;
 }
 @media (max-width: 768px) {
   .fra {
     margin-top: 25px;
-    font-family: "Open Sans", "Helvetica", Arial, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     font-size: 30px;
     color: #fff;
   }
@@ -338,7 +338,7 @@ li {
 .cuad {
   margin-left: 50px;
   font-size: 20px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   color: #f9f9f9;
 }
 
@@ -595,7 +595,7 @@ li {
 }
 @media (max-width: 768px) {
   .square-titulo {
-    font-family: 15px;
+    font-size: 15px;
     color: #fff;
     margin-top: 5px;
     margin-left: 0;
@@ -605,13 +605,13 @@ li {
 
 .fra {
   font-size: 15px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   margin-right: 300px;
 }
 @media (max-width: 768px) {
   .fra {
     font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     margin-right: 15px;
   }
 }
@@ -927,7 +927,7 @@ li {
 .subtitulos {
   color: #fff;
   font-size: 30px;
-  font-family: "Georgia", "Times New Roman", Times, serif;
+  font-family: "Playfair Display", Georgia, serif;
   line-height: 1.6;
   margin-bottom: 20px;
   font-weight: 500;
@@ -1464,7 +1464,7 @@ li {
 }
 
 .copyright {
-  font-family: "Dancing Script", cursive;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   font-size: 18px;
   text-align: center;
   color: #edeff4;
@@ -1490,7 +1490,7 @@ li {
 }
 .copyright::before {
   content: "© 2025";
-  font-family: Arial, sans-serif;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
 }
 @media (max-width: 768px) {
   .copyright::before {
@@ -1507,7 +1507,7 @@ li {
 }
 
 .jpr {
-  font-family: "Dancing Script", cursive;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
   font-weight: 700;
   color: #f9f4f4;
 }

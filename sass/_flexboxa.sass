@@ -1,0 +1,266 @@
+// Estilos SASS para la sección de yoga y terapia holística - VERSION RESPONSIVA
+// Importar las variables
+@use 'variables' as *
+
+// Mixins para breakpoints
+@mixin mobile
+    @media (max-width: 767px)
+        @content
+
+@mixin tablet
+    @media (min-width: 768px) and (max-width: 1023px)
+        @content
+
+@mixin desktop
+    @media (min-width: 1024px)
+        @content
+.titulo
+    color: #fff
+.parra
+    color: #fff
+.flexbox-a
+    width: 100%
+    margin-left: 0
+    display: flex
+    flex-direction: column
+    gap: $padding-medium
+    padding: $padding-medium
+
+.pie
+    width: 100%
+    margin-left: 0
+
+    // Tablet y desktop: layout horizontal
+    @include tablet
+        flex-direction: row
+        flex-wrap: wrap
+        gap: $padding-large
+
+    @include desktop
+        flex-direction: row
+        flex-wrap: nowrap
+        gap: $padding-large
+
+.box-a-1
+    color: #fff
+    flex: 1
+    min-width: 280px // Reducido para mejor adaptación móvil
+
+    @include tablet
+        flex: 1 1 45% // Ocupa 45% en tablet
+        min-width: 300px
+
+    @include desktop
+        flex: 1
+        min-width: 300px
+
+.subtitulos
+    color: #fff
+    font-size: 30px
+    font-family: $font-serif
+    line-height: 1.6
+    margin-bottom: $padding-medium
+    font-weight: 500
+
+    // Ajustes responsivos de tipografía
+    @include mobile
+        font-size: $font-medium
+        text-align: center
+
+    @include tablet
+        font-size: calc(#{$font-large} * 0.9)
+
+.box-a-2
+    flex: 2
+    min-width: 280px // Reducido para móvil
+
+    @include tablet
+        flex: 1 1 100% // Ocupa toda la fila en tablet
+        min-width: 100%
+
+    @include desktop
+        flex: 2
+        min-width: 400px
+
+.loco
+    margin-bottom: $padding-medium
+
+    .yoga
+        color: #f5f0f0
+        font-size: $font-large
+        line-height: 1.7
+        text-align: justify
+
+    @include mobile
+        font-size: $font-small
+        text-align: left // Mejor para móvil que justify
+
+    .t-1
+        font-weight: bold
+        font-size: 18px
+        color: $color-accent
+        margin-bottom: $font-medium
+        display: block
+
+        @include mobile
+            font-size: 16px
+            text-align: center
+
+.video-youtube
+    position: relative
+    width: 100%
+    height: 0
+    padding-bottom: 56.25% // Mantiene aspect ratio 16:9
+    margin-bottom: $padding-medium
+    border-radius: 8px
+    overflow: hidden
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+
+    // Ajustes para diferentes pantallas
+    @include mobile
+        border-radius: 4px
+        margin-bottom: $padding-small
+
+    iframe
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        border: none
+
+.box-a-3
+    width: 100%
+    flex: 1
+    min-width: 280px // Reducido para móvil
+
+    @include tablet
+        flex: 1 1 100% // Ocupa toda la fila en tablet
+        min-width: 100%
+
+    @include desktop
+        flex: 1
+        min-width: 300px
+
+.contacto-contenedor
+    display: flex
+    flex-direction: column
+    gap: $padding-medium
+
+    // En tablet: formulario y mapa lado a lado
+    @include tablet
+        flex-direction: row
+        gap: $padding-large
+
+    // En desktop: mantener layout horizontal
+    @include desktop
+        flex-direction: row
+        gap: $padding-large
+
+    .info
+        flex: 1
+        border: 2px solid $color-secondary
+        border-radius: 8px
+        padding: $padding-medium
+        background: $gradient-sunrise
+
+        @include mobile
+            padding: $padding-small
+            border-radius: 4px
+
+    legend
+        padding: 0 8px
+
+        h3
+            margin: 0
+            font-size: 20px
+            color: $color-primary
+            font-weight: 600
+
+            @include mobile
+                font-size: 18px
+                text-align: center
+
+    label
+        display: block
+        margin-top: $font-medium
+        margin-bottom: 8px
+        font-weight: 500
+        color: $color-secondary
+
+        @include mobile
+            font-size: $font-small
+
+    input
+        width: 100%
+        padding: 12px
+        border: 1px solid $color-primary
+        border-radius: 4px
+        font-size: $font-medium
+        background-color: rgba(255, 255, 255, 0.9)
+        color: $color-secondary
+        box-sizing: border-box
+
+        @include mobile
+            padding: 10px
+            font-size: $font-small
+
+        &:focus
+            outline: none
+            border-color: $color-accent
+            box-shadow: 0 0 0 2px rgba(255, 154, 158, 0.2)
+
+        &::placeholder
+            color: rgba(118, 75, 162, 0.6)
+
+    button
+        margin-top: $font-medium
+        padding: 12px $padding-medium
+        background: $gradient-zen
+        color: white
+        border: none
+        border-radius: 4px
+        font-size: $font-medium
+        font-weight: 500
+        cursor: pointer
+        width: 100%
+        transition: all 0.3s ease // Añadido para suavizar animaciones
+
+        @include mobile
+            padding: 10px $padding-small
+            font-size: $font-small
+
+        &:hover
+            opacity: 0.9
+            transform: translateY(-1px)
+
+        &:active
+            transform: translateY(1px)
+
+    .mapa
+        flex: 1
+        height: 300px
+        border-radius: 8px
+        overflow: hidden
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1)
+
+        @include mobile
+            height: 250px
+            border-radius: 4px
+
+        @include tablet
+            height: 350px
+
+        iframe
+            width: 100%
+            height: 100%
+            border: none
+
+// Media queries adicionales para casos específicos
+@media (max-width: 480px)
+    .flexbox-a
+        padding: $padding-small
+        gap: $padding-small
+
+    .box-a-1, .box-a-2, .box-a-3
+        min-width: 100%

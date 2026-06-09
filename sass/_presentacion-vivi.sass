@@ -1,0 +1,66 @@
+@use 'variables'
+
+.presentacion-vivi
+    max-width: 1000px
+    margin: 0 auto
+    padding: 40px 20px
+    display: flex
+    flex-direction: column
+    gap: 28px
+
+.bloque-vivi
+    display: flex
+    align-items: center
+    gap: 30px
+    padding: 34px 38px
+    border-radius: 18px
+    background: #a8542f
+    &.invertido
+        flex-direction: row-reverse
+
+.bloque-texto
+    flex: 1
+
+.eyebrow
+    font-family: variables.$font-cuerpo
+    font-size: 13px
+    letter-spacing: 2px
+    text-transform: uppercase
+    color: #f1c89a
+    margin: 0 0 12px
+
+.titulo-vivi
+    font-family: variables.$font-titulo
+    font-weight: 600
+    font-size: clamp(24px, 3vw, 32px)
+    line-height: 1.2
+    color: #f7efe2
+    margin: 0 0 14px
+
+.texto-vivi
+    font-family: variables.$font-cuerpo
+    font-size: 17px
+    line-height: 1.7
+    color: #edd9c6
+    margin: 0
+
+.bloque-foto
+    flex: 0 0 240px
+
+.bloque-foto img
+    width: 100%
+    height: 240px
+    object-fit: cover
+    border-radius: 18px
+    display: block
+
+@media (max-width: 768px)
+    .bloque-vivi, .bloque-vivi.invertido
+        flex-direction: column
+        padding: 24px
+        text-align: center
+    .bloque-foto
+        flex: 0 0 auto
+        width: 100%
+    .bloque-foto img
+        height: 200px
